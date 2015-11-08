@@ -18,7 +18,7 @@ npm install
 ### Windows
 
 ```
-C:\Windows\System32\Drivers\etc\hosts
+C:\Windows\System32\drivers\etc\hosts
 ```
 
 ### OSX
