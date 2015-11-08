@@ -32,7 +32,7 @@ C:\Windows\System32\Drivers\etc\hosts
 Add the following line at the end of the file and save:
 
 ```
-127.0.0.1  core-training.kuali.core
+127.0.0.1  core-training.kuali.co
 ```
 
 ## Run the App 
