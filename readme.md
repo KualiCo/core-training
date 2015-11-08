@@ -1,18 +1,15 @@
-# Core Tutorial
+# Core Training
 
 ## Requirements
-This tutorial requires the following:
 
 * Node.js 0.12.7 
 * A text editor
 
 ## Setup
 
-Do the following:
-
 ```
-git clone https://github.com/KualiCo/core-tutorial.git
-cd core-tutorial
+git clone https://github.com/KualiCo/core-training.git
+cd core-training
 npm install
 ```
 
@@ -20,18 +17,22 @@ npm install
 
 ### Windows
 
-Edit C:\Windows\System32\Drivers\etc\hosts
+```
+C:\Windows\System32\Drivers\etc\hosts
+```
 
 ### OSX
 
-Edit /private/etc/hosts
+```
+/private/etc/hosts
+```
 
 ### Both
 
 Add the following line at the end of the file and save:
 
 ```
-127.0.0.1  core-tutorial.kuali.core
+127.0.0.1  core-training.kuali.core
 ```
 
 ## Run the App 
@@ -40,8 +41,12 @@ Add the following line at the end of the file and save:
 npm start
 ```
 
-Open browser to https://core-tutorial.kuali.co:3000
+Open browser to 
+
+```
+https://core-training.kuali.co:3000
+```
 
 Bypass certificate error
 
-Should see **Core Tutorial** on the screen.
+Should see **Core Training** on the screen.

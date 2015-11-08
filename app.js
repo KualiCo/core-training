@@ -7,7 +7,7 @@ var app = express()
 app.use(cookieParser())
 
 app.get('/', function(req, res, next) {
-  var html = '<h1>Core Tutorial</h1>'
+  var html = '<h1>Core Training</h1>'
   res.send(html)
 })
 
