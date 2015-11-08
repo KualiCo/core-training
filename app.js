@@ -1,6 +1,7 @@
 var express = require('express')
 var cookieParser = require('cookie-parser')
-var request = require('request')
+var request = require('request-json')
+var client = request.createClient('https://taddgiles.kuali.co/api/v1/')
 
 var app = express()
 
