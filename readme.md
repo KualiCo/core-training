@@ -8,7 +8,7 @@ This tutorial requires the following:
 
 ## Setup
 
-Do the following to setup for this tutorial:
+Do the following:
 
 ```
 git clone https://github.com/KualiCo/core-tutorial.git
