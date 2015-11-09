@@ -7,8 +7,29 @@ var app = express()
 
 app.use(cookieParser())
 
+app.use(function(req, res, next) {
+  var authToken = req.cookies.authToken
+  if(!authToken) { return next() }
+
+  client.headers['Authorization'] = 'Bearer ' + authToken
+  client.get('users/current/', function(error, response, body) {
+    req.currentUser = body
+    console.log(req.currentUser)
+    next()
+  })
+})
+
 app.get('/', function(req, res, next) {
+  var requestedUrl = req.protocol + '://' + req.get('Host') + req.url
   var html = '<h1>Core Training</h1>'
+  if(req.currentUser) {
+    html += '<h2>' + req.currentUser.displayName + '</h2>'
+    html +=
+     '<a href="https://taddgiles.kuali.co/auth/signout?return_to=' +
+    requestedUrl + '">Sign out</a>'
+  } else {
+    html += "<a href='https://taddgiles.kuali.co/auth'>Sign In</a>"
+  }
   res.send(html)
 })
 
