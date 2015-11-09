@@ -1,5 +1,9 @@
 # Core Training
 
+## Presentation Slides
+
+[https://github.com/KualiCo/core-training/blob/master/presentation.pdf](https://github.com/KualiCo/core-training/blob/master/presentation.pdf)
+
 ## Requirements
 
 * Node.js 0.12.7 
